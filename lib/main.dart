@@ -3,10 +3,10 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mini_browser_app/data/services/ai_summary_service.dart'
     show AISummaryService, Summary;
+import 'package:mini_browser_app/presentation/pages/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'data/repositories/browser_repository_impl.dart';
-import 'presentation/pages/browser_home_page.dart';
 import 'presentation/providers/browser_providers.dart';
 import 'presentation/providers/tab_provider.dart';
 import 'presentation/providers/theme_provider.dart';
@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
           themeMode: themeProvider.isDarkMode
               ? ThemeMode.dark
               : ThemeMode.light,
-          home: BrowserHomePage(),
+          home: SplashScreen(),
         );
       },
     );
