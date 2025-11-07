@@ -49,7 +49,7 @@ A production-ready **Flutter application** featuring a **multi-tab browser** wit
 ---
 
 ## 🏗️ Architecture
-
+```text
 lib/
 ├── domain/ # Business Logic Layer
 │ └── entities/ # Core business objects
@@ -76,7 +76,7 @@ lib/
 └── widgets/ # Reusable components
 
 ### 🧱 Architecture Diagram
-
+```text
 ┌─────────────────────────────────────────────────────┐
 │ Presentation Layer │
 │ ┌────────────┐ ┌────────────┐ ┌────────────┐ │
