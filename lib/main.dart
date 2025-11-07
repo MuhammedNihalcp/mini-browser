@@ -31,8 +31,8 @@ void main() async {
             repository,
             AISummaryService(
               provider: Summary.smmry,
-              apiKey: String.fromEnvironment(''),
-              // dotenv.env['HUGGING_FACE_API_KEY'] ?? '',
+              apiKey: dotenv.env['HUGGING_FACE_API_KEY'] ?? '',
+              // String.fromEnvironment(''),
             ),
           ),
         ),
